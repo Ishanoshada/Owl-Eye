@@ -1,10 +1,4 @@
-Here's a detailed **README.md** for the PyPI package version of the **Owl-Eye** tool, tailored for both GitHub and PyPI.
 
----
-
-### README.md
-
-```markdown
 # Owl-Eye
 
 Owl-Eye is a Python package that allows users to perform WHOIS lookups for domains or IP addresses. It parses and displays essential information such as registration details, name servers, ownership details, and more.
