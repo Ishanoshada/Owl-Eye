@@ -1,9 +1,9 @@
 from colorama import Fore, Back, Style
 import pyfiglet
 import time
-from banner import display_banner
-from utils import check_network
-from whois_lookup import start_session, fetch_whois_data, parse_whois_response, print_parsed_data
+from .banner import display_banner
+from .utils import check_network
+from .whois_lookup import start_session, fetch_whois_data, parse_whois_response, print_parsed_data
 
 def display_custom_banner():
     banner =  """                                                                                
