@@ -158,3 +158,5 @@ Owl-Eye is licensed under the [MIT License](LICENSE). Feel free to use, modify, 
 
 For issues or feature requests, please open an issue in the [GitHub repository](https://github.com/ishaoshada/Owl-Eye/issues).
 
+
+**Repository Views** ![Views](https://profile-counter.glitch.me/owl-eye/count.svg)
