@@ -38,6 +38,29 @@ After installation, you can use Owl-Eye directly from the terminal:
 owl-eye
 ```
 
+```python
+Enter Website URL or IP Address: ishanoshada.com
+
+WHOIS Information:
+
+        Domain Name: ishanoshada.com
+        Registry Domain ID: 2941423617_DOMAIN_COM-VRSN
+        Registrar WHOIS Server: whois.tucows.com
+        Registrar URL: http://www.tucows.com
+        Updated Date: 2024-12-11T18:35:00Z
+        Creation Date: 2024-12-11T18:35:00Z
+        Expiry Date: 2025-12-11T18:35:00Z
+        Registrar IANA ID: 69
+        Registrar Abuse Email: domainabuse@tucows.com
+        Registrar Abuse Phone: +1.4165350123
+        Name Servers:
+          - NS1.VERCEL-DNS.COM
+          - NS2.VERCEL-DNS.COM
+        DNSSEC: unsigned
+
+```
+
+
 Follow the on-screen prompts to provide a domain or IP address for the WHOIS lookup.
 
 ---
@@ -55,6 +78,28 @@ display_banner()
 if check_network():
     domain = "example.com"
     get_data(domain)
+
+
+"""
+
+WHOIS Information:
+
+        Domain Name: ishanoshada.com
+        Registry Domain ID: 2941423617_DOMAIN_COM-VRSN
+        Registrar WHOIS Server: whois.tucows.com
+        Registrar URL: http://www.tucows.com
+        Updated Date: 2024-12-11T18:35:00Z
+        Creation Date: 2024-12-11T18:35:00Z
+        Expiry Date: 2025-12-11T18:35:00Z
+        Registrar IANA ID: 69
+        Registrar Abuse Email: domainabuse@tucows.com
+        Registrar Abuse Phone: +1.4165350123
+        Name Servers:
+          - NS1.VERCEL-DNS.COM
+          - NS2.VERCEL-DNS.COM
+        DNSSEC: unsigned
+
+"""
 ```
 
 ---
