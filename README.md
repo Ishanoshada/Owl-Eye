@@ -3,7 +3,7 @@
 
 Owl-Eye is a Python package that allows users to perform WHOIS lookups for domains or IP addresses. It parses and displays essential information such as registration details, name servers, ownership details, and more.
 
-This package is based on the original script by [LaviruD](https://github.com/LaviruD/Owl-Eye) and has been modularized and packaged for ease of use and distribution.
+This package is based on the original script by [LaviruDilshan](https://github.com/LaviruD/Owl-Eye) and has been modularized and packaged for ease of use and distribution.
 
 ---
 
@@ -69,8 +69,7 @@ Follow the on-screen prompts to provide a domain or IP address for the WHOIS loo
 You can also use Owl-Eye in your Python scripts:
 
 ```python
-from owl_eye import display_banner, check_network, fetch_whois_data, extract_topics, extract_details
-
+from owl_eye import display_banner, check_network, get_data
 # Display banner
 display_banner()
 
@@ -125,14 +124,9 @@ owl-eye/
 │   ├── utils.py
 │   ├── whois_lookup.py
 │   ├── main.py
-├── tests/
-│   ├── test_banner.py
-│   ├── test_utils.py
-│   ├── test_whois_lookup.py
 ├── setup.py
 ├── README.md
 ├── LICENSE
-├── requirements.txt
 ```
 
 ---
