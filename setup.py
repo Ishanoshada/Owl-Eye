@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="owl-eye",
-    version="0.1.4",
+    version="0.1.5",
     author="Ishan Oshada",
     description="A WHOIS lookup tool",
     long_description=open("README.md").read(),

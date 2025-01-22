@@ -54,11 +54,7 @@ display_banner()
 # Check network connectivity
 if check_network():
     domain = "example.com"
-    soup = fetch_whois_data(domain)
-
-    # Extract and display WHOIS data
-    extract_topics(soup, 0)  # Example topic
-    extract_details(soup, 0)  # Example detail
+    get_data(domain)
 ```
 
 ---

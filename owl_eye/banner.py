@@ -42,4 +42,4 @@ def display_banner():
     print(Fore.RED + result)
     time.sleep(1)
     print(Fore.YELLOW + "         [+]Coded By Black Owl[+]")
-    print(Fore.YELLOW + "         [+]V0.1[+]\n\n")
+    print(Fore.YELLOW + "         [+]V0.1.1[+]\n\n")

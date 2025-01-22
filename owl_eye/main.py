@@ -1,11 +1,9 @@
 from colorama import Fore, Back, Style
 import pyfiglet
-import requests
-from bs4 import BeautifulSoup
 import time
-from .banner import display_banner
-from .utils import check_network
-from .whois_lookup import fetch_whois_data, extract_topics, extract_details
+from banner import display_banner
+from utils import check_network
+from whois_lookup import start_session, fetch_whois_data, parse_whois_response, print_parsed_data
 
 def display_custom_banner():
     banner =  """                                                                                
@@ -62,12 +60,12 @@ def display_custom_banner():
                                .@@"""
     result = pyfiglet.figlet_format("               O w l  E y e")
     print(Fore.GREEN + banner)
-    time.sleep(3)
+    time.sleep(2)
     print(Fore.RED + result)
-    time.sleep(3)
+    time.sleep(2)
     print(Fore.YELLOW + "         [+]Coded By Black Owl[+]")
-    time.sleep(3)
-    print(Fore.YELLOW + "         [+]V0.1[+]\n\n")
+    time.sleep(1)
+    print(Fore.YELLOW + "         [+]V0.1.1[+]\n\n")
 
 def main():
     # Display the custom banner
@@ -79,22 +77,22 @@ def main():
         return
 
     # Get input from the user
-    domain_or_ip = input("Enter Website URL or IP Address: ")
+    domain = input("Enter Website URL or IP Address: ")
 
-    # Fetch WHOIS data
-    soup = fetch_whois_data(domain_or_ip)
-    if not soup:
-        return
 
     # Extract and display WHOIS data
     print("\nWHOIS Information:\n")
     try:
-        # Display topics and details (example order)
-        extract_topics(soup, 0)  # Topic 1
-        extract_details(soup, 0)  # Example details
-        extract_details(soup, 1)
-        extract_details(soup, 2)
-        extract_details(soup, 3)
+        session, domain = start_session(domain)
+
+        if session and domain:
+            whois_data = fetch_whois_data(session, domain)
+            whois_data 
+            if whois_data:
+                parsed_data = parse_whois_response(whois_data)
+                print_parsed_data(parsed_data)
+
+        
     except Exception as e:
         print(Fore.RED + f"Error extracting data: {e}")
 
